@@ -1,0 +1,14 @@
+@import '../../../shared.scss';
+
+.icon--white {
+  path {
+    fill: $company_white;
+
+  }
+}
+
+.icon--orange {
+  path {
+    fill: $company_orange;
+  }
+}
