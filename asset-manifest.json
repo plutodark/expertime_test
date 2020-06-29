@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.5f361e03.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.9023427a.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.9023427a.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.252166f1.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.252166f1.js.map",
-    "static/js/2.d498de8b.chunk.js": "/react-gh-pages/static/js/2.d498de8b.chunk.js",
-    "static/js/2.d498de8b.chunk.js.map": "/react-gh-pages/static/js/2.d498de8b.chunk.js.map",
-    "index.html": "/react-gh-pages/index.html",
-    "precache-manifest.4ce9cde3e593ef6fbd76b47b6282d7b8.js": "/react-gh-pages/precache-manifest.4ce9cde3e593ef6fbd76b47b6282d7b8.js",
-    "service-worker.js": "/react-gh-pages/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/react-gh-pages/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.d498de8b.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.d498de8b.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/react-gh-pages/static/media/logo.5d5d9eef.svg"
+    "main.css": "/expertime_test/static/css/main.5f361e03.chunk.css",
+    "main.js": "/expertime_test/static/js/main.de267420.chunk.js",
+    "main.js.map": "/expertime_test/static/js/main.de267420.chunk.js.map",
+    "runtime-main.js": "/expertime_test/static/js/runtime-main.1bbd927d.js",
+    "runtime-main.js.map": "/expertime_test/static/js/runtime-main.1bbd927d.js.map",
+    "static/js/2.d498de8b.chunk.js": "/expertime_test/static/js/2.d498de8b.chunk.js",
+    "static/js/2.d498de8b.chunk.js.map": "/expertime_test/static/js/2.d498de8b.chunk.js.map",
+    "index.html": "/expertime_test/index.html",
+    "precache-manifest.c768113533d659f169b4ba1c5bd51bd4.js": "/expertime_test/precache-manifest.c768113533d659f169b4ba1c5bd51bd4.js",
+    "service-worker.js": "/expertime_test/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/expertime_test/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.d498de8b.chunk.js.LICENSE.txt": "/expertime_test/static/js/2.d498de8b.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/expertime_test/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.252166f1.js",
+    "static/js/runtime-main.1bbd927d.js",
     "static/js/2.d498de8b.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.9023427a.chunk.js"
+    "static/js/main.de267420.chunk.js"
   ]
 }
