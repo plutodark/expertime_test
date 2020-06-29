@@ -1,0 +1,30 @@
+.header--mobile {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 18px;
+  padding-right: 20px;
+  padding-top: 19px;
+  height: 60px;
+}
+.header--mobile--logo {
+  margin-left: 45px;
+}
+
+.header--mobile--menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.header--mobile--right-buttons {
+  display: flex;
+  .icon {
+    margin-left: 32px;
+    height: 24px;
+    width: 24px;
+  }
+  .number-circle {
+    height: 24px;
+    width: 24px;
+  }
+}

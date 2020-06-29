@@ -1,0 +1,29 @@
+@import '../../../shared.scss';
+.number-circle {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 11px;
+  font-family: Quicksand;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+}
+
+.number-circle--gold {
+  background-color: $company_gold;
+  .number-circle--text {
+    color: $company_white;
+  }
+
+}
+
+.number-circle--white{
+  background-color: $company_white;
+  .number-circle--text {
+    color: $company_gold;
+  }
+}

@@ -1,14 +1,43 @@
 @import '../../../shared.scss';
-
+.icon {
+  height: 16px;
+  width: 16px;
+}
 .icon--white {
   path {
     fill: $company_white;
-
   }
 }
 
 .icon--orange {
   path {
     fill: $company_orange;
+  }
+}
+.icon--black {
+  path {
+    fill: $company_black;
+  }
+}
+
+.icon--hoverable {
+  cursor: pointer;
+
+  &:hover {
+    &.icon--black {
+      path {
+        fill: $company_orange;
+      }
+    }
+    &.icon--white {
+      path {
+        fill: $company_orange;
+      }
+    }
+    &.icon--orange {
+      path {
+        fill: $company_black;
+      }
+    }
   }
 }

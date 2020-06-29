@@ -1,0 +1,35 @@
+@import '../../../shared.scss';
+.number-icon-button {
+  display: flex;
+  cursor: pointer;
+  .icon {
+    margin-right: 5px;
+  }
+  &:hover {
+    svg {
+      path {
+        fill: $company_gold;
+      }
+    }
+    .number-circle {
+      background-color: $company_gold;
+      .number-circle--text {
+        color: white;
+      }
+    }
+    &.number-icon-button--white {
+      svg {
+        path {
+          fill: $company_gold;
+        }
+      }
+      .number-circle {
+        background-color: $company_gold;
+        .number-circle--text {
+          color: white;
+        }
+      }
+    }
+  }
+
+}
