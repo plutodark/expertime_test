@@ -1,3 +1,7 @@
+.header {
+  display: fixed;
+  top: 0;
+}
 .header--mobile {
   display: flex;
   justify-content: space-between;
@@ -7,7 +11,7 @@
   height: 60px;
 }
 .header--mobile--logo {
-  margin-left: 45px;
+  margin-left: 52px;
 }
 
 .header--mobile--menu {
@@ -18,8 +22,10 @@
 }
 .header--mobile--right-buttons {
   display: flex;
+  justify-content: space-between;
+  width: calc(100vw - 195px);
+  padding-left: 10px;
   .icon {
-    margin-left: 32px;
     height: 24px;
     width: 24px;
   }

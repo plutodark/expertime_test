@@ -1,25 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { SizeProvider } from './contexts/SizeContext';
+import { ScrollProvider } from './contexts/ScrollContext';
+import HomePage from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. 12345
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Testing
-        </a>
-      </header>
-    </div>
+    <ScrollProvider>
+      <SizeProvider>
+        <HomePage />
+      </SizeProvider>
+    </ScrollProvider>
   );
 }
 

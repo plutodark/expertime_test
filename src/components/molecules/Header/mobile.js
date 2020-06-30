@@ -2,12 +2,13 @@ import React from 'react';
 import Logo from '../../atoms/Logo';
 import IconButton from '../../molecules/IconButton';
 import NumberIconButton from '../../molecules/NumberIconButton';
+import MobileMenu from '../../molecules/MobileMenu';
 import './mobile.scss';
 
 const Mobile = ({ isWhite }) => {
   const renderMenu = () => (
     <div className='header--mobile--menu'>
-      Menu
+      <MobileMenu />
     </div>
   );
   const renderLogo = () => (
@@ -23,10 +24,12 @@ const Mobile = ({ isWhite }) => {
     </div>
   );
   return (
-    <div className='header--mobile'>
-      {renderLogo()}
-      {renderButtonGroups()}
-      {renderMenu()}
+    <div className='header'>
+      <div className='header--mobile'>
+        {renderLogo()}
+        {renderButtonGroups()}
+        {renderMenu()}
+      </div>
     </div>
   );
 };

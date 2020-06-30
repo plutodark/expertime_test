@@ -1,11 +1,15 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
 .header--desktop {
   height: 80px;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
   align-items: center;
-  max-width: 1024px;
-  background:red;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;

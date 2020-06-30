@@ -1,21 +1,17 @@
-import React from 'react';
-import T from 'prop-types';
+import React, { useContext } from 'react';
+import { SizeContext } from '../../../contexts/SizeContext';
+import { ScrollContext } from '../../../contexts/ScrollContext';
 import Desktop from './desktop';
+import Mobile from './mobile';
 
-const Header = ({ isMobile, isWhite }) => {
-  const renderMobile = () => (
-    <div className='header--mobile'>
 
-    </div>
-  );
-  return isMobile ? renderMobile() : <Desktop isWhite={isWhite} />;
+const Header = () => {
+  const { isTablet, isMobile } = useContext(SizeContext);
+  const { isTop } = useContext(ScrollContext);
+  const isWhite = isTop;
+  console.log('isMobile', isMobile);
+  return isMobile || isTablet ? <Mobile/> : <Desktop isWhite={isWhite} />;
 };
 
-Header.defaultProps = {
-  isMobile: false,
-};
-Header.propTypes = {
-  isMobile: T.bool,
-}
 
 export default Header;

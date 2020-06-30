@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family:  'Spectral', 'Quicksand', sans-serif;
+  font-family:  'Spectral','Spectral-bold', 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -10,11 +10,16 @@ body {
   font-family: 'Spectral';
   src: local('Spectral'), url(./fonts/Spectral-ExtraLight.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Spectral-bold';
+  src: local('Spectral-bold'), url(./fonts/Spectral-Regular.ttf) format('truetype');
+}
 /* Styrene B alternative */
 @font-face {
   font-family: 'Quicksand';
   src: local('Quicksand'), url(./fonts/Quicksand-Light.ttf) format('truetype');
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
