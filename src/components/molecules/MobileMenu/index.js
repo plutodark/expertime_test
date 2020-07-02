@@ -1,19 +1,19 @@
 import React, { useState, useContext } from 'react';
-import { useSpring, animated} from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 import { SizeContext } from '../../../contexts/SizeContext';
 import Logo from '../../atoms/Logo';
 import Icon from '../../atoms/Icon';
 import './hamburger.scss';
 import './style.scss';
 
-const MobileMenu = () => {
+const MobileMenu = ({ isWhite }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { width } = useContext(SizeContext);
   const menuWidth = width - 70;
   const menuStyle = useSpring({ width: isOpen ? menuWidth : 0, transform: `translate3d(${isOpen ? 0 : 20}px,0,0)`, opacity: isOpen ? 1 : 0 });
   const renderButton = () => (
-    <div className={'mobile-menu--button'}>
-      <button className={`hamburger hamburger--collapse ${isOpen && 'is-active'}`} type="button" onClick={() => setIsOpen(!isOpen)}>
+    <div className={`mobile-menu--button ${isOpen && 'mobile-menu--button--background-white'}`}>
+      <button className={`hamburger ${isWhite && 'hamburger--white'} hamburger--collapse ${isOpen && 'is-active'}`} type="button" onClick={() => setIsOpen(!isOpen)}>
         <span className="hamburger-box">
           <span className="hamburger-inner" />
         </span>

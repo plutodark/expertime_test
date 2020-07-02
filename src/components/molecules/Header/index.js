@@ -10,7 +10,7 @@ const Header = () => {
   const { isTop } = useContext(ScrollContext);
   const isWhite = isTop;
   console.log('isMobile', isMobile);
-  return isMobile || isTablet ? <Mobile/> : <Desktop isWhite={isWhite} />;
+  return isMobile || isTablet ? <Mobile isWhite={isWhite} /> : <Desktop isWhite={isWhite} />;
 };
 
 

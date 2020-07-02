@@ -8,7 +8,7 @@ import './mobile.scss';
 const Mobile = ({ isWhite }) => {
   const renderMenu = () => (
     <div className='header--mobile--menu'>
-      <MobileMenu />
+      <MobileMenu isWhite={isWhite} />
     </div>
   );
   const renderLogo = () => (
@@ -24,7 +24,7 @@ const Mobile = ({ isWhite }) => {
     </div>
   );
   return (
-    <div className='header'>
+    <div className={`header ${!isWhite && 'header--white'}`}>
       <div className='header--mobile'>
         {renderLogo()}
         {renderButtonGroups()}

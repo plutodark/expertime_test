@@ -4,12 +4,19 @@
   align-items: flex-start;
 }
 .mobile-menu--button {
-  background: white;
   z-index: 1;
+}
+.mobile-menu--button--background-white {
+  background: white;
 }
 .hamburger {
   margin-top: 13px;
 
+}
+.hamburger--white {
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: white;
+  }
 }
 .hamburger:focus {
   outline: none;

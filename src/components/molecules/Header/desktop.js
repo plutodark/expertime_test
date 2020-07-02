@@ -39,7 +39,7 @@ const Header = ({ isWhite }) => {
     </div>
   );
   return (
-    <div className='header'>
+    <div className={`header ${!isWhite && 'header--white'}`}>
       <div className='header--desktop'>
         <div className={'header--left'}>
           {renderHomeButton()}

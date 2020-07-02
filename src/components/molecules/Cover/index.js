@@ -8,9 +8,9 @@ const Cover = () => {
   const [isMouseOver, setMouseOver] = useState(false);
   const { isTablet, isMobile } = useContext(SizeContext);
   const coverStyle = useSpring({
-    backgroundSize: isMouseOver ? '110% auto' : '100% auto',
+    backgroundSize: isMouseOver ? 'auto 105%' : 'auto 100%',
     opacity: 1,
-    from: {opacity: 0},
+    from: {opacity: 0.5},
     config: { duration: 1000 }
   });
   const CoverTitle = () => (

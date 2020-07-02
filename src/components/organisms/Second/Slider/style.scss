@@ -1,0 +1,19 @@
+.slider {
+  .icon {
+      width: 36px;
+      height: 36px;
+  }
+  position: relative;
+  background: white;
+  margin-bottom: 30px;
+  .slider--left-button {
+    position: absolute;
+    left: -18px;
+    top: calc(50% - 18px);
+  }
+  .slider--right-button {
+    position: absolute;
+    right: -18px;
+    top: calc(50% - 18px);
+  }
+}

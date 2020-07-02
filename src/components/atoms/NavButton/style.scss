@@ -20,7 +20,7 @@
     height: 1px;
     margin-top: 10px;
   }
-  &:hover {
+  &:hover, &.nav-button--selected {
     color: $company_gold;
     .nav-button--underline {
       opacity: 1;
