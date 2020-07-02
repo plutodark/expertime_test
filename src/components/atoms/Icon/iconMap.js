@@ -12,6 +12,10 @@ import { ReactComponent as WorldIcon } from './svg/world.svg';
 import { ReactComponent as InteriorIcon } from './svg/interior.svg';
 import { ReactComponent as LeftIcon } from './svg/left.svg';
 import { ReactComponent as RightIcon } from './svg/right.svg';
+import { ReactComponent as SugarIcon } from './svg/sugar.svg';
+import { ReactComponent as HerbIcon } from './svg/herb.svg';
+import { ReactComponent as FacebookIcon } from './svg/facebook.svg';
+import { ReactComponent as InstagramIcon } from './svg/instagram.svg';
 
 
 const iconMap = {
@@ -29,6 +33,10 @@ const iconMap = {
   interior: InteriorIcon,
   left: LeftIcon,
   right: RightIcon,
+  sugar: SugarIcon,
+  herb: HerbIcon,
+  facebook: FacebookIcon,
+  instagram: InstagramIcon,
 };
 
 export default iconMap;

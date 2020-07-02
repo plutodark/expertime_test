@@ -1,0 +1,71 @@
+@import '../../../shared.scss';
+
+.second--menu--title {
+  display: flex;
+  justify-content: space-between;
+}
+.second--menu--title--item {
+
+}
+.second--content--divider {
+  height: 1px;
+  background: #ddd;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.second--content {
+  background-image: url('./contentBackground.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 300px;
+  position: relative;
+}
+.second--content--skew {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.second--content--skew--skew {
+  position: absolute;
+  transform: skewX(-30deg);
+  right: -200px;
+  height: 100%;
+  left: 300px;
+  background: white;
+}
+.second--content--iphone {
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  height: calc(100% + 68px);
+}
+
+.second--content--text {
+  top: 30px;
+  left: 300px;
+  position: absolute;
+  text-align: left;
+  padding-right: 30px;
+}
+
+.second--content--text--title {
+  font-family: Spectral-bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+.second--content--text--content {
+  font-family: Quicksand;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.second--content--text--image {
+  img {
+    margin-right: 10px;
+  }
+}
