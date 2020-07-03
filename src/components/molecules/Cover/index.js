@@ -1,12 +1,10 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import { SizeContext } from '../../../contexts/SizeContext';
 import Icon from '../../atoms/Icon';
 import './style.scss';
 
 const Cover = () => {
   const [isMouseOver, setMouseOver] = useState(false);
-  const { isTablet, isMobile } = useContext(SizeContext);
   const coverStyle = useSpring({
     backgroundSize: isMouseOver ? 'auto 105%' : 'auto 100%',
     opacity: 1,
@@ -38,8 +36,6 @@ const Cover = () => {
       <div>Découvrir le starter pack</div>
     </div>
   );
-  const DynamicImage = () => (<animated.div className='cover--image' style={coverStyle} />);
-  const StaticImage = () => (<div className='cover--image' />);
   return (
     <div
       className='cover'
@@ -56,7 +52,7 @@ const Cover = () => {
           <CoverLink content={'Déja OPNer ? Rechargez votre bar.'} />
         </div>
       </div>
-      {isTablet || isMobile ? <StaticImage /> : <DynamicImage />}
+      <animated.div className='cover--image' style={coverStyle} />
     </div>
   );
 };

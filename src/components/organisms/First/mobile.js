@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useTransition, animated } from 'react-spring';
-import Block from '../../atoms/Block';
 import Icon from '../../atoms/Icon';
 import PlayerImage from './Player.png';
 import './mobile.scss';
@@ -47,6 +46,7 @@ const Mobile = () => {
     <div className='first--menu'>
     {items.map((item, index) => (
       <div
+        key={index}
         className={`first--menu--item ${index === selectedIndex && 'selected'}`}
         onClick={() => setSelectedIndex(index)}
       />

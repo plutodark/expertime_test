@@ -37,8 +37,6 @@ export const SizeProvider = ({ children }) => {
     const handleResize = () => {
       const width = window.innerWidth;
       const height = window.innerHeight;
-      console.log('window', window);
-      console.log('width', width);
       const isMobile = width < tabletMinWidth;
       const isTablet = width < tabletMaxWidth && width >= tabletMinWidth;
       setDimensions({

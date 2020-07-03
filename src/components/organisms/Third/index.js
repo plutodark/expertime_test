@@ -41,7 +41,7 @@ const Third = () => {
     </div>
   );
   const SecondSectionContent = ({ src, title }) => (
-    <div>
+    <div key={src}>
       <img src={src} alt={src}/>
       <div>{title}</div>
       <GroupIcons />

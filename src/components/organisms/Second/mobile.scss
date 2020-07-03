@@ -1,42 +1,43 @@
 @import '../../../shared.scss';
-
-.second--social-buttons {
-  margin-bottom: 30px;
-}
-
-.second--box {
-  text-align: left;
-  background: white;
-  margin-bottom: 10px;
-  .second--box--title {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+@include responsive('nonDesktop') {
+  .second--social-buttons {
+    margin-bottom: 30px;
   }
-}
 
-.second--content {
-  background: none;
-  height: auto;
-  .second--content--image {
-    position: relative;
-    overflow: hidden;
-    .second--content--background {
-      width: calc(100vw - 40px);
+  .second--box {
+    text-align: left;
+    background: white;
+    margin-bottom: 10px;
+    .second--box--title {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
     }
-    .second--content--iphone {
-      position: absolute;
-      bottom: -5px;
+  }
+
+  .second--content {
+    background: none;
+    height: auto;
+    .second--content--image {
+      position: relative;
+      overflow: hidden;
+      .second--content--background {
+        width: calc(100vw - 40px);
+      }
+      .second--content--iphone {
+        position: absolute;
+        bottom: -5px;
+        top: auto;
+        height: calc(100% - 20px);
+
+      }
+    }
+    .second--content--text {
+      position: relative;
       top: auto;
-      height: calc(100% - 20px);
-
+      left: auto;
+      padding-left: 10px;
+      padding-bottom: 10px;
     }
-  }
-  .second--content--text {
-    position: relative;
-    top: auto;
-    left: auto;
-    padding-left: 10px;
-    padding-bottom: 10px;
   }
 }

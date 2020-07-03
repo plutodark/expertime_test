@@ -1,5 +1,4 @@
 import React from 'react';
-import Block from '../../atoms/Block';
 import Header from '../../molecules/Header';
 import Cover from '../../molecules/Cover';
 import ContentBlocks from '../../molecules/ContentBlocks';

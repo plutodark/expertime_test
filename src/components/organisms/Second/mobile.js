@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import _ from 'lodash';
 import Block from '../../atoms/Block';
-import NavButton from '../../atoms/NavButton';
-import Slider from './Slider';
 import backgroundSrc from './contentBackground.png';
 import iphoneSrc from './iphone.png';
 import googlePlaySrc from './GooglePlay.png';
